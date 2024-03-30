@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b477f8f0f.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio website</title>
+</head>
+<body>
+    <div class="home-container">
+        <div class="child-container">
+            <div class="header">
+                <a href="" class="logo">Stephen.</a>
+
+                <div class="navbar">
+                    <button type="button" onclick="myHome()">Home</button>            
+                    <button type="button" onclick="funcAbout()">About Me</button>
+                    <button type="button" onclick="projects()">Projects</button>
+                    <button>Resume</button>
+                    <button>Contact Me</button>
+                    <button>Publications</button>
+                    <button type="button" class="subscribe-btn">Subscribe to my newsletter <i class="fa-solid fa-bell"></i></button>
+                </div>
+            </div>
+    
+            <div class="text-image-container" id="home">
+                <div class="text-container">
+                    <div class="text">
+                        <h1 class="greetings">Hello!</h1>
+                        <br>
+                        <h1 class="introduction">I'm <span class="stephen">Stephen</span> Akinrodoye</h1>
+                        <br>
+                        <span class="profession"><h3>Software Engineer</h3></span>
+                    </div> 
+                    <div class="call-to-action">
+                        <a href="">Let's Talk</a>
+                    </div>
+        
+                    <div class="testimonials-container">
+                        <!-- if a user sends a favourable review or message,
+                        the owner may display such reviews in the block of commented code below -->
+
+                        <!-- <h4>Testimonials</h4>
+        
+                        <div class="testimonials">
+                            <h5 class="name"></h5>
+                            <p class="review"></p>
+                        </div> -->
+        
+                        <div class="form">
+                            <form action="" class="testimonials-form">
+                                <label for=""><h5>Send a message</h5></label>
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="leave a message">
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="image-container">
+                    <!-- image called using CSS -->
+                </div>
+            </div>
+        </div>
+
+        <div class="about-me-container" id="about-me">
+            <div class="about-me-img">
+                <img src="/Images/Stephen_Portrait.jpg" alt="" width="300px" height="300px">
+            </div>
+
+            <div class="about-me-text">
+                <h3>About Me</h3>
+                <br>
+                <p>
+                    Welcome! I'm Stephen Akinrodoye, a dynamic and dedicated individual with a passion for innovation and efficiency. Organized, efficient, and driven by a thirst for knowledge, I thrive on discovering and implementing new ideas that make a tangible difference.
+        
+                    <br>
+                    <br>
+                    My journey into the world of technology led me to explore the realm of front-end development at Web3Bridge, where I honed my skills and crafted a solid foundation in creating captivating digital experiences. Armed with a keen eye for detail and a knack for problem-solving, I am adept at transforming concepts into reality through elegant and user-friendly interfaces.
+        
+                    But my strengths extend beyond technical proficiency. As a good listener and learner, I understand the importance of effective communication in both group settings and one-on-one interactions. This ability allows me to not only grasp complex ideas but also convey them clearly and concisely.
+        
+                    <br>
+                    <br>
+                    Driven by a relentless pursuit of excellence, I am committed to leveraging my talents and skills to overcome challenges and achieve objectives. Whether it's motivating a team or navigating individual tasks, I thrive in environments where collaboration and innovation intersect.
+        
+                    Join me on this journey of exploration and creation as we push the boundaries of what's possible in the digital landscape. Together, let's build experiences that inspire, engage, and leave a lasting impact.
+                </p>
+            </div>
+        </div>
+
+        <div class="social-links" id="social-links">
+            <a href="https://linkedin.com/in/stephen-akinrodoye" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/Stephen_Akinrod" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="https://web.facebook.com/fun.tobi01" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <span class="home-img-hover" id="home-img-hover"></span>
+
+        <div class="projects-container" id="projects-container">
+            <h3>My Projects</h3>
+            <br>
+
+            <h4>Launch Countdown Timer</h4>
+
+            <div class="project-details">
+                <div class="countdown-description">                
+                    <p>
+                        Here is a simple countdown timer app that counts the amount of time left to launch a project in days, hours,
+                        minutes, and seconds. Whether today is the 10th day of March or the 28th day of december, I've got
+                        you covered.
+                    </p>
+    
+                    <div class="project-links">
+                        <a href="https://github.com/Tobistephenn/Countdown-Timer.git" target="_blank">View the code</a>
+                        <a href="https://tobistephenn.github.io/Countdown-Timer/" target="_blank">View the page</a>
+                    </div>
+                </div>
+
+                <div class="timer-img">
+                    <img src="/Images/Launch Countdown timer.png" alt="" width="400px" height="200px">
+                </div>
+    
+                <div class="comments-container">
+                    <div class="comment-section">
+                        <!-- displays users inputs from comments-input -->
+                        <h5 class="name"><!-- displays user's name --></h5>
+                        <p class="comments"><!-- displays user's comments --></p>
+                    </div>
+        
+                    <div class="comments-input">
+                        <textarea name="" id="comments-input" cols="30" rows="5" placeholder="Leave a comment"></textarea>
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="footer">
+            <i class="fa-regular fa-copyright"></i>
+            <p>Stephen Akinrodoye 2024</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
