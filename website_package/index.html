@@ -71,7 +71,7 @@
 
         <div class="about-me-container" id="about-me">
             <div class="about-me-img">
-                <img src="/Images/Stephen_Portrait.jpg" alt="" width="300px" height="300px">
+                <img src="Stephen_Portrait.jpg" alt="" width="300px" height="300px">
             </div>
 
             <div class="about-me-text">
@@ -124,19 +124,20 @@
                 </div>
 
                 <div class="timer-img">
-                    <img src="/Images/Launch Countdown timer.png" alt="" width="400px" height="200px">
+                    <img src="Launch Countdown timer.png" alt="" width="400px" height="200px">
                 </div>
     
                 <div class="comments-container">
                     <div class="comment-section">
                         <!-- displays users inputs from comments-input -->
-                        <h5 class="name"><!-- displays user's name --></h5>
-                        <p class="comments"><!-- displays user's comments --></p>
+                        <h5 class="name" id="name"><!-- displays user's name --></h5>
+                        <p class="comments" id="comments"><!-- displays user's comments --></p>
                     </div>
         
                     <div class="comments-input">
+                        <input class="user-name" id="user_name" placeholder="Name"></input>
                         <textarea name="" id="comments-input" cols="30" rows="5" placeholder="Leave a comment"></textarea>
-                        <button>Submit</button>
+                        <button type="button" id="comments-submit-btn" onclick="submitComment()">Submit</button>
                     </div>
                 </div>
             </div>            

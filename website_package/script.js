@@ -4,6 +4,8 @@ const socialLinks = document.getElementById("social-links");
 const homeImgHover = document.getElementById("home-img-hover");
 const projectsContainer = document.getElementById("projects-container");
 
+
+
 function funcAbout() {
     aboutMe.style.display = "block";
     aboutMe.style.display = "flex";
@@ -28,4 +30,14 @@ function projects() {
     home.style.display = "none";
     aboutMe.style.display = "none";
     homeImgHover.style.display = "none";
+    socialLinks.style.display = "none";
 }
+
+// function submitComment() {
+//     const name = document.getElementById("name").value;
+//     const user_name = document.getElementById("user_name").value;
+
+//     let commentSection = [{}];
+
+//     let 
+// }
