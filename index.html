@@ -110,35 +110,35 @@
             <h4>Launch Countdown Timer</h4>
 
             <div class="project-details">
-                <div class="countdown-description">                
-                    <p>
-                        Here is a simple countdown timer app that counts the amount of time left to launch a project in days, hours,
-                        minutes, and seconds. Whether today is the 10th day of March or the 28th day of december, I've got
-                        you covered.
-                    </p>
-    
-                    <div class="project-links">
-                        <a href="https://github.com/Tobistephenn/Countdown-Timer.git" target="_blank">View the code</a>
-                        <a href="https://tobistephenn.github.io/Countdown-Timer/" target="_blank">View the page</a>
-                    </div>
-                </div>
-
-                <div class="timer-img">
-                    <img src="Launch Countdown timer.png" alt="" width="400px" height="200px">
-                </div>
-    
-                <div class="comments-container">
-                    <div class="comment-section">
-                        <!-- displays users inputs from comments-input -->
-                        <h5 class="name" id="name"><!-- displays user's name --></h5>
-                        <p class="comments" id="comments"><!-- displays user's comments --></p>
-                    </div>
+                <div class="project-description">
+                    <div class="countdown-description">                
+                        <p>
+                            Here is a simple countdown timer app that counts the amount of time left to launch a project in days, hours,
+                            minutes, and seconds. Whether today is the 10th day of March or the 28th day of december, I've got
+                            you covered.
+                        </p>
         
+                        <div class="project-links">
+                            <a href="https://github.com/Tobistephenn/Countdown-Timer.git" target="_blank">View the code</a>
+                            <a href="https://tobistephenn.github.io/Countdown-Timer/" target="_blank">View the page</a>
+                        </div>
+                    </div>
+    
+                    <div class="timer-img">
+                        <img src="Launch Countdown timer.png" alt="" width="400px" height="200px">
+                    </div>
+                    
                     <div class="comments-input">
                         <input class="user-name" id="user_name" placeholder="Name"></input>
-                        <textarea name="" id="comments-input" cols="30" rows="5" placeholder="Leave a comment"></textarea>
-                        <button type="button" id="comments-submit-btn" onclick="submitComment()">Submit</button>
+                        <input name="" id="comments-input" placeholder="Leave a comment"></input>
+                        <button type="submit" id="comments-submit-btn" onclick="submitComment()">Submit</button>
                     </div>
+                </div>                
+
+                <div class="comment-section">
+                    <!-- displays users inputs from comments-input -->
+                    <p class="name" id="name" placeholder="User name"><!-- displays user's name --></p>
+                    <p class="comments" id="comments" placeholder="User comment"><!-- displays user's comments --></p>
                 </div>
             </div>            
         </div>

@@ -27,7 +27,7 @@ button {
     color: white;
     padding: 10px;
     border-radius: 1rem;
-    border: solid;
+    border: 2px solid;
 }
 
 button:active {
@@ -42,7 +42,7 @@ button:hover, button.subscribe-btn {
 .call-to-action {
     position: relative;
     background-color: transparent;
-    border: solid;
+    border: 2px solid;
     border-color: rgb(39, 165, 196);
     margin: 1rem 0rem;
     padding: 10px;
@@ -95,6 +95,18 @@ button:hover, button.subscribe-btn {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.comment-section p {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin-top: 2rem;
+}
+
+.comment-section p::placeholder {
+    color: antiquewhite;
 }
 
 .footer {
@@ -242,10 +254,10 @@ input {
 
 .projects-container {
     padding: 5rem 10rem;
-    display: none;
+    /* display: none; */
 }
 
-.project-details {
+.project-description {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
@@ -318,7 +330,7 @@ input {
 .subscribe-btn {
     position: relative;
     background-color: transparent;
-    border: solid;
+    border: 2px solid;
     border-color: rgb(39, 165, 196);
     margin: 1rem 0rem;
     padding: 10px;
