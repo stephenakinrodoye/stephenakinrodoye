@@ -105,8 +105,8 @@ button:hover, button.subscribe-btn {
     margin-top: 2rem;
 }
 
-.comment-section p::placeholder {
-    color: antiquewhite;
+.comment-section p:nth-child(1) {
+    border: none;
 }
 
 .footer {

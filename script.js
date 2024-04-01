@@ -34,26 +34,42 @@ function projects() {
 const submitBtn = document.getElementById('comments-submit-btn');
 const userName = document.getElementById('user_name');
 const formComment = document.getElementById('comments-input');
-const name = document.getElementById('name');
-const comments = document.getElementById('comments');
+// const name = document.getElementById('name');
+// const comments = document.getElementById('comments');
 const commentSection = document.querySelector('.comment-section');
 
-feedbackArr = [];
+let feedbackArr = [];
 
-function submitComment(e) {
+function submitComment() {
     const userForm = userName.value;
     const commentForm = formComment.value;
 
     if (userForm && commentForm !== '') {
-        // create new feedback section
-        newFeedback = {
+        // create new feedback object
+        const newFeedback = {
             "userName": userForm,
             "userComment": commentForm,
         }
         // add new feedback to array
         feedbackArr.push(newFeedback);
+
+        // Add new feedback to comment section
+        addFeedback(newFeedback);
+
+        // Reset form
+        resetForm();
     }
-    e.preventDefault();
+}
+
+function addFeedback(item) {
+    // create new comment div
+    const div = document.createElement('div');
+    div.classList.add('comment-section');
+    div.innerHTML = `
+        <p class="name" id="name" placeholder="User name">${item.userName}</p>
+        <p class="comments" id="comments" placeholder="User comment">${item.userComment}</p>`
+
+    commentSection.appendChild(div);
 }
 
 function resetForm() {
@@ -61,16 +77,4 @@ function resetForm() {
     formComment.value = '';
 }
 
-function addFeedback(item) {
-    // create new div
-    const div = document.createElement('div');
-    div.classList = 'comment-section'
-    div.innerHTML = `
-        <div class="comment-section">
-            <p class="name" id="name" placeholder="User name">${item.userName}</p>
-            <p class="comments" id="comments" placeholder="User comment">${item.userComment}</p>
-        </div>`
-
-    commentSection.insertAdjacentElement('beforeend', div);
-}
-
+submitBtn.addEventListener('click', submitComment);
