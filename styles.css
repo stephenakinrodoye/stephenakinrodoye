@@ -110,10 +110,6 @@ button:hover, button.subscribe-btn {
     border: none;
 }
 
-.timer-img img {
-    border-radius: 1rem;
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -387,7 +383,9 @@ input {
     align-items: center;
 }
 
-
+.timer-img img {
+    border-radius: 1rem;
+}
 
 
 
