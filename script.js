@@ -4,14 +4,13 @@ const socialLinks = document.getElementById("social-links");
 const homeImgHover = document.getElementById("home-img-hover");
 const projectsContainer = document.getElementById("projects-container");
 
-
-
 function funcAbout() {
     aboutMe.style.display = "block";
     aboutMe.style.display = "flex";
     home.style.display = "none";
     socialLinks.style.display = "none";
     homeImgHover.style.display = "none";
+    projectsContainer.style.display = "none";
 }
 
 function myHome() {
@@ -20,7 +19,7 @@ function myHome() {
     aboutMe.style.display = "none";
     socialLinks.style.display = "block";
     homeImgHover.style.display = "block";
-
+    projectsContainer.style.display = "none";
 }
 
 function projects() {
