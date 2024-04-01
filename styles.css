@@ -85,6 +85,7 @@ button:hover, button.subscribe-btn {
     border: solid rgb(39, 165, 196);
     width: 327px;
     padding: 10px;
+    border-radius: 1rem;
 }
 
 .countdown-description p {
@@ -107,6 +108,10 @@ button:hover, button.subscribe-btn {
 
 .comment-section p:nth-child(1) {
     border: none;
+}
+
+.timer-img img {
+    border-radius: 1rem;
 }
 
 .footer {
@@ -254,7 +259,7 @@ input {
 
 .projects-container {
     padding: 5rem 10rem;
-    /* display: none; */
+    display: none;
 }
 
 .project-description {
