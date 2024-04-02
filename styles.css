@@ -422,13 +422,13 @@ input {
     .menu-icon {
         display: block;
         position: fixed;
-        top: 2%;
+        top: 2.5%;
         right: 4%;
         padding: 9px;
         color: rgb(39, 165, 196);
     }
 
     .subscribe-btn {
-        right: 40%;
+        right: 45%;
     }
 }
