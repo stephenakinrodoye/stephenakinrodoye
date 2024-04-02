@@ -26,7 +26,7 @@ button {
     background-color: black;
     color: white;
     padding: 10px;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: 2px solid;
 }
 
@@ -48,7 +48,7 @@ button:hover, button.subscribe-btn {
     padding: 10px;
     max-width: 6.2rem;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 10px;
     z-index: 1;
     overflow: hidden;
 }
@@ -236,6 +236,10 @@ input {
     animation-delay: .4s;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .profession {
     color: antiquewhite;
     position: relative;
@@ -336,7 +340,6 @@ input {
     margin: 1rem 0rem;
     padding: 10px;
     justify-content: center;
-    border-radius: 1rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -396,6 +399,36 @@ input {
     }
 }
 
-@media screen and (max-width: 375px) {
-    
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 390px) {
+    .header {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1px 1rem;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 2%;
+        right: 4%;
+        padding: 9px;
+        color: rgb(39, 165, 196);
+    }
+
+    .subscribe-btn {
+        right: 40%;
+    }
 }
