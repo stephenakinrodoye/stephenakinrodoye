@@ -33,8 +33,6 @@ function projects() {
 const submitBtn = document.getElementById('comments-submit-btn');
 const userName = document.getElementById('user_name');
 const formComment = document.getElementById('comments-input');
-// const name = document.getElementById('name');
-// const comments = document.getElementById('comments');
 const commentSection = document.querySelector('.comment-section');
 
 let feedbackArr = [];
@@ -77,3 +75,27 @@ function resetForm() {
 }
 
 submitBtn.addEventListener('click', submitComment);
+
+const barsMenu = document.querySelector('#bars-menu');
+const closeMenu = document.getElementById('close-menu');
+const subscribeBtn = document.getElementById('subscribe-btn');
+const menu = document.querySelector('.menu');
+
+//display menu on media queries
+
+function displayMenu() {
+    menu.style.display = 'block';
+    barsMenu.style.display = 'none';
+    closeMenu.style.display = 'block';
+    subscribeBtn.style.display = 'none'
+}
+
+barsMenu.addEventListener('click', displayMenu);
+
+//close menu on media queries
+function shutDownMenu() {
+    menu.style.display = 'none';
+    barsMenu.style.display = 'block';
+    closeMenu.style.display = 'none';
+    subscribeBtn.style.display = 'block';
+}

@@ -17,14 +17,19 @@
                 <a href="" class="logo">Stephen.</a>
 
                 <div class="navbar">
-                    <button class="menu" type="button" onclick="myHome()">Home</button>            
-                    <button class="menu" type="button" onclick="funcAbout()">About Me</button>
-                    <button class="menu" type="button" onclick="projects()">Projects</button>
-                    <button class="menu" >Resume</button>
-                    <button class="menu" >Contact Me</button>
-                    <button class="menu" >Publications</button>
-                    <button type="button" class="subscribe-btn">Subscribe <i class="fa-solid fa-bell"></i></button>
-                    <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+                    <div class="menu">
+                        <button class="menu-btn" onclick="shutDownMenu(); myHome()" type="button">Home</button>            
+                        <button class="menu-btn" onclick="shutDownMenu(); funcAbout()" type="button">About Me</button>
+                        <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Resume</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Contact Me</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Publications</button>
+                    </div>
+                    <button type="button" class="subscribe-btn" id="subscribe-btn">Subscribe <i class="fa-solid fa-bell"></i></button>
+                    <div class="menu-icons">
+                        <button class="bars" id="bars-menu" onclick="displayMenu()"><i class="fa-solid fa-bars"></i></button>
+                        <button class="close" id="close-menu" onclick="shutDownMenu()"><i class="fa fa-times" aria-hidden="true"></i></i></button>
+                    </div>
                 </div>
             </div>
     
