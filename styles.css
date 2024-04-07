@@ -412,6 +412,7 @@ input {
 
     .child-container {
         padding: 0rem 1rem;
+        margin: 0rem;
     }
 
     #close-menu {
