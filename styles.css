@@ -498,6 +498,10 @@ input {
         right: 4rem;
     }
 
+    .text {
+        margin: 5rem 0rem 0rem;
+    }
+
     .text-container {
         font-size: 15px;
     }    
