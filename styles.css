@@ -112,28 +112,18 @@ button:hover, button.subscribe-btn {
 .call-to-action-form form .textarea-field textarea {
     width: 100%;
     height: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
+    padding: .8rem;
+    font-size: 1rem;
     color: aliceblue;
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid rgb(39, 165, 196);
 }
 
+/* set placeholder color */
 .call-to-action-form form .input-box .input-field input::placeholder,
 .call-to-action-form form .textarea-field textarea::placeholder {
     color: aliceblue;
-}
-
-.call-to-action-form form .focus {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.6rem;
-    z-index: -1;
 }
 
 .call-to-action-form form .textarea-field {
@@ -144,6 +134,10 @@ button:hover, button.subscribe-btn {
 
 .call-to-action-form form .textarea-field textarea {
     resize: none;
+}
+
+.lets-talk-btn .btn {
+    background: transparent;
 }
 
 .child-container {
