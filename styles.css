@@ -428,6 +428,39 @@ input {
     width: 100%;
 }
 
+.subscribe-form {
+    margin: 7rem 10rem;
+    padding: 6rem 12rem;
+    background-color: rgb(4, 17, 17);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form h2 {
+    font-weight: 400;
+}
+
+.subscribe-form p {
+    text-align: center;
+}
+
+.subscribe-form input {
+    width: 100%;
+    border: 2px solid rgb(39, 165, 196);
+    background: transparent;
+}
+
+.subscribe-form input::placeholder {
+    color: aliceblue;
+}
+
+.subscribe-form button {
+    background: transparent;
+}
+
 .stephen {
     color: rgb(39, 165, 196);
 }
