@@ -303,6 +303,10 @@ input {
     display: none; /*display icons using JS*/
 }
 
+.menu-mobile {
+    display: none;
+}
+
 .navbar {
     display: inline-flex;
     gap: 5px;
@@ -431,7 +435,7 @@ input {
 .subscribe-form {
     margin: 7rem 10rem;
     padding: 6rem 12rem;
-    background-color: rgb(4, 17, 17);
+    background-color: rgb(6, 36, 36);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -489,6 +493,88 @@ input {
 .timer-img img {
     border-radius: 1rem;
 }
+
+.resume-container {
+    margin-bottom: 10rem;
+    background-color: rgb(6, 36, 36);
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resume-container h2 {
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-container .skills .progress-bar {
+    width: 20rem;
+    height: 1.2rem;
+    border: 2px solid rgb(39, 165, 196);
+    border-radius: 6px;
+    position: relative;
+}
+
+.resume-container .skills .progress-bar::before {
+    content: '';
+    height: 100%;
+    background-color: rgb(39, 165, 196);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+.resume-container #html .progress-bar::before {
+    width: 75%;
+}
+
+.resume-container #css .progress-bar::before {
+    width: 70%;
+}
+
+.resume-container #js .progress-bar::before {
+    width: 50%;
+}
+
+.resume-container #react .progress-bar::before {
+    width: 10%;
+}
+
+.resume-container #sol .progress-bar::before {
+    width: 60%;
+}
+
+.resume-container #py .progress-bar::before {
+    width: 50%;
+}
+
+.professional-skills #innovation-management .progress-bar::before {
+    width: 80%;
+}
+
+.professional-skills #web-design .progress-bar::before {
+    width: 25%;
+}
+
+.skills .solidity {
+    background: white;
+    width: 50px;
+    height: 50px;
+}
+
+
+.programming-skills .professional-skills .hackathons {
+    border: 2px solid rgb(39, 165, 196);
+}
+
+/* .skills-container {
+    display: flex;
+    justify-content: space-between;
+} */
 
 
 
@@ -556,7 +642,7 @@ input {
         top: 1rem;
     }
 
-    .menu {
+    .menu-mobile {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -566,6 +652,10 @@ input {
         border-radius: 10px;
         z-index: 2;
         width: 7rem;
+    }
+
+    .menu-desktop {
+        display: none;
     }
 
     .menu-btn {

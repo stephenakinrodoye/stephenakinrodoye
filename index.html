@@ -17,7 +17,16 @@
                 <a href="" class="logo">Stephen.</a>
 
                 <div class="navbar">
-                    <div class="menu">
+                    <div class="menu-desktop">
+                        <button class="menu-btn" onclick="shutDownMenu(); myHome()" type="button">Home</button>            
+                        <button class="menu-btn" onclick="shutDownMenu(); funcAbout()" type="button">About Me</button>
+                        <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Resume</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Contact Me</button>
+                        <button class="menu-btn" onclick="shutDownMenu()" >Publications</button>
+                    </div>
+
+                    <div class="menu-mobile">
                         <button class="menu-btn" onclick="shutDownMenu(); myHome()" type="button">Home</button>            
                         <button class="menu-btn" onclick="shutDownMenu(); funcAbout()" type="button">About Me</button>
                         <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
@@ -196,6 +205,102 @@
             <input type="text" placeholder="Email Address">
 
             <button>Sign me up</button>
+        </div>
+
+        <div class="resume-container">
+            <h2>RESUME</h2>
+            <div class="skills-container">
+                <div class="programming-skills">
+                    <h3>Programming Skills</h3>
+                    <div class="skills" id="html">
+                        <div class="skill-description">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                            <div class="percentage">75%</div>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+    
+                    <div class="skills" id="css">
+                        <div class="skill-description">
+                            
+                        </div>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                        <div class="percentage">70%</div>
+                        <div class="progress-bar"></div>                        
+                    </div>
+    
+                    <div class="skills" id="js">
+                        <div class="skill-description">
+                            
+                        </div>
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                        <div class="percentage">50%</div>
+                        <div class="progress-bar"></div>                        
+                    </div>
+
+                    <div class="skills" id="react">
+                        <div class="skill-description">
+                            
+                        </div>
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                        <div class="percentage">10%</div>
+                        <div class="progress-bar"></div>                        
+                    </div>
+        
+                    <div class="skills" id="sol">
+                        <div class="skill-description">
+                            <div class="skill-icon">
+                                <img src="solidity-icon.png" alt="" class="solidity">
+                            </div>                            
+                            <p>Solidity</p>
+                            <div class="percentage">60%</div>
+                        </div>                        
+                        <div class="progress-bar"></div>                        
+                    </div>
+        
+                    <div class="skills" id="py">
+                        <div class="skill-description">
+                            <div class="skill-icon">
+                                <img src="7-2-python-logo-free-download-png.png" alt="">
+                            </div>                            
+                            <p>Python</p>
+                            <div class="percentage">50%</div>
+                        </div>                        
+                        <div class="progress-bar"></div>                        
+                    </div>
+                </div>
+
+                <div class="professional-skills">
+                    <h3>Professional skills</h3>
+                    <div class="skills" id="innovation-management">
+                        <div class="skill-description">
+                            <p>Innovation management</p>
+                            <div class="percentage">80%</div>
+                        </div>                        
+                        <div class="progress-bar"></div>                        
+                    </div>
+    
+                    <div class="skills" id="web-design">
+                        <div class="skill-description">
+                            <p>Web design</p>
+                            <div class="percentage">25%</div>
+                        </div>
+                        <div class="progress-bar"></div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="hackathons">
+                <h3>Hackathons</h3>
+                <h4 class="hackathon-name">BUIDLCON2.0 <span>4th - 6th April, 2024</span></h4>
+                <img src="The Team.png" alt="" class="team" width="300px" height="150">
+                <h4 class="team-name">LedaStorc</h4>
+                <h4 class="position">1st runner up</h4>
+            </div>
         </div>
 
         <div class="footer">

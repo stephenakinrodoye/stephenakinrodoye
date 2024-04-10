@@ -79,12 +79,12 @@ submitBtn.addEventListener('click', submitComment);
 const barsMenu = document.querySelector('#bars-menu');
 const closeMenu = document.getElementById('close-menu');
 const subscribeBtn = document.getElementById('subscribe-btn');
-const menu = document.querySelector('.menu');
+const menuMobile = document.querySelector('.menu-mobile');
 
 //display menu on media queries
 
 function displayMenu() {
-    menu.style.display = 'block';
+    menuMobile.style.display = 'block';
     barsMenu.style.display = 'none';
     closeMenu.style.display = 'block';
     subscribeBtn.style.display = 'none'
@@ -94,7 +94,7 @@ barsMenu.addEventListener('click', displayMenu);
 
 //close menu on media queries
 function shutDownMenu() {
-    menu.style.display = 'none';
+    menuMobile.style.display = 'none';
     barsMenu.style.display = 'block';
     closeMenu.style.display = 'none';
     subscribeBtn.style.display = 'block';
