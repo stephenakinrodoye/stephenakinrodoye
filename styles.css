@@ -251,7 +251,7 @@ h3 {
 
 .image-container {
     border-radius: 50%;
-    background-image: url(IMG_0160_Portrait.jpg);
+    background-image: url(/images/IMG_0160_Portrait.jpg);
     background-size: cover;
     width: 450px;
     height: 450px;
