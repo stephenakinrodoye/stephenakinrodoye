@@ -43,7 +43,7 @@ button:hover, button.subscribe-btn {
     cursor: pointer;
 }
 
-/* this is for Let's talk button */
+/* this is for Let's connect button */
 .call-to-action {
     position: relative;
     background-color: transparent;
@@ -51,7 +51,7 @@ button:hover, button.subscribe-btn {
     border-color: rgb(39, 165, 196);
     margin: 1rem 0rem;
     padding: 10px;
-    max-width: 6.2rem;
+    width: 8.3rem;
     justify-content: center;
     border-radius: 10px;
     z-index: 1;
@@ -144,7 +144,7 @@ button:hover, button.subscribe-btn {
     background: transparent;
 }
 
-.child-container {
+.home-container {
     padding: 0rem 10rem;
 }
 
@@ -229,7 +229,7 @@ h3 {
     z-index: 100;
 }
 
-.home-container {
+.general-container {
     font-weight: 400;
     font-style: normal;
     background-color: black;
@@ -244,7 +244,7 @@ h3 {
     width: 460px;
     height: 460px;
     background: transparent;
-    opacity: 85%;
+    opacity: 65%;
     transition: 3s;
     border-radius: 50%;
 }
@@ -253,13 +253,10 @@ h3 {
     background-color: black;
 }
 
-.image-container {
+.image-container img {
     border-radius: 50%;
-    background-image: url(./images/IMG_0160_Portrait.jpg);
-    background-size: cover;
-    width: 450px;
-    height: 450px;
-    margin-top: 5rem;
+    position: relative;
+    top: 3rem;
 }
 
 input {
@@ -336,7 +333,7 @@ input {
 
 .projects-container {
     padding: 5rem 10rem;
-    display: none;
+    display: block; /*don't forget to change display back to none*/
 }
 
 .project-description {
@@ -363,13 +360,132 @@ input {
     color: rgb(39, 165, 196);
 }
 
-.social-links {
-    position: absolute;
-    bottom: 40px;
-    width: 12rem;
-    margin: 0rem 0rem 2rem 10rem;
+.professional-skills #innovation-management .progress-bar::before {
+    width: 80%;
+}
+
+.professional-skills #web-design .progress-bar::before {
+    width: 25%;
+}
+
+.programming-skills .professional-skills .hackathons {
+    border: 2px solid rgb(39, 165, 196);
+}
+
+.professional-skills .skills .skill-description {
     display: flex;
+    gap: 4rem;
+}
+
+.professional-skills #innovation-management .skill-description {
+    gap: 2rem;
+}
+
+.professional-skills #web-design .skill-description {
+    gap: 8.5rem;
+}
+
+.programming-skills, .professional-skills, .hackathons {
+    border: 2px solid rgb(39, 165, 196);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.publications {
+    padding: 5rem 10rem;
+}
+
+.publications h3 {
+    margin-bottom: 1rem;
+}
+
+.publications .write-up .write-up-title {
+    margin: 0.7rem 0rem;
+}
+
+.publications .write-up a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume-container {
+    background-color: rgb(6, 36, 36);
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.resume-container h2 {
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-container .skills .progress-bar {
+    width: 18rem;
+    height: 1.2rem;
+    border: 2px solid rgb(39, 165, 196);
+    border-radius: 6px;
+    position: relative;
+}
+
+.resume-container .skills .progress-bar::before {
+    content: '';
+    height: 100%;
+    background-color: rgb(39, 165, 196);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+.resume-container #html .progress-bar::before {
+    width: 75%;
+}
+
+.resume-container #css .progress-bar::before {
+    width: 70%;
+}
+
+.resume-container #js .progress-bar::before {
+    width: 50%;
+}
+
+.resume-container #react .progress-bar::before {
+    width: 10%;
+}
+
+.resume-container #sol .progress-bar::before {
+    width: 60%;
+}
+
+.resume-container #py .progress-bar::before {
+    width: 50%;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 6px 0px 4px;
+}
+
+.social-links {
+    position: relative;
+    bottom: -3rem;
+    width: 13rem;
+    margin: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social-links a {
@@ -498,124 +614,6 @@ input {
     border-radius: 1rem;
 }
 
-.resume-container {
-    background-color: rgb(6, 36, 36);
-    padding: 5rem 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.resume-container h2 {
-    color: aliceblue;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.resume-container .skills .progress-bar {
-    width: 18rem;
-    height: 1.2rem;
-    border: 2px solid rgb(39, 165, 196);
-    border-radius: 6px;
-    position: relative;
-}
-
-.resume-container .skills .progress-bar::before {
-    content: '';
-    height: 100%;
-    background-color: rgb(39, 165, 196);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 50%;
-}
-
-.resume-container #html .progress-bar::before {
-    width: 75%;
-}
-
-.resume-container #css .progress-bar::before {
-    width: 70%;
-}
-
-.resume-container #js .progress-bar::before {
-    width: 50%;
-}
-
-.resume-container #react .progress-bar::before {
-    width: 10%;
-}
-
-.resume-container #sol .progress-bar::before {
-    width: 60%;
-}
-
-.resume-container #py .progress-bar::before {
-    width: 50%;
-}
-
-.professional-skills #innovation-management .progress-bar::before {
-    width: 80%;
-}
-
-.professional-skills #web-design .progress-bar::before {
-    width: 25%;
-}
-
-.programming-skills .professional-skills .hackathons {
-    border: 2px solid rgb(39, 165, 196);
-}
-
-.skill-description {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin: 6px 0px 4px;
-}
-
-.professional-skills .skills .skill-description {
-    display: flex;
-    gap: 4rem;
-}
-
-.professional-skills #innovation-management .skill-description {
-    gap: 2rem;
-}
-
-.professional-skills #web-design .skill-description {
-    gap: 8.5rem;
-}
-
-.programming-skills, .professional-skills, .hackathons {
-    border: 2px solid rgb(39, 165, 196);
-    border-radius: 10px;
-    width: fit-content;
-    padding: 1rem;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-}
-
-.publications {
-    padding: 5rem 10rem;
-}
-
-.publications h3 {
-    margin-bottom: 1rem;
-}
-
-.publications .write-up .write-up-title {
-    margin: 0.7rem 0rem;
-}
-
-.publications .write-up a {
-    color: white;
-    text-decoration: none;
-}
-
 .write-up {
     border-bottom: 2px solid rgb(39, 165, 196);
 }
@@ -624,6 +622,8 @@ input {
     display: inline-flex;
     gap: 1rem;
     color: grey;
+    margin-top: 1rem;
+    font-size: 14px;
 }
 
 .write-up .write-up-footer .like-count {
@@ -641,17 +641,30 @@ input {
     }
 }
 
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 390px) {
+    .about-me-img img {
+        width: 5rem;
+        height: 5rem;
+    }
+    
     #bars-menu{
         color: rgb(39, 165, 196);
+    } 
+    
+    .call-to-action {
+        width: 6.6rem;
     }
 
-    /* set home page margin to 1rem from the screen border */
-    .child-container {
-        padding: 0rem 1rem;
-        /* margin: 0rem; */
+    .call-to-action-form {
+        position: relative;
+        padding-bottom: 10rem;
+    }
+
+    .call-to-action-form .social-links {
+        position: absolute;
+        top: 26rem;
+        left: 5.5rem;
     }
 
     #close-menu {
@@ -659,8 +672,12 @@ input {
         color: rgb(39, 165, 196);
     }
 
+    .countdown-description {
+        width: 100%;
+    }
+
     .header {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -668,28 +685,33 @@ input {
         padding: 1px 1rem;
     }
 
-    .home-img-hover {
-        position: fixed;
-        top: 6.7rem;
-        right: -85px;
-        width: 260px;
-        height: 260px;
-        background: black;
-        opacity: 85%;
-        transition: 3s;
-        border-radius: 50%;
+    /* set home page margin to 1rem from the screen border */
+    .home-container, .about-me-container, .projects-container, .call-to-action-form,
+    .subscribe-form, .resume-container, .publications {
+        padding: 1rem;
     }
 
-    .image-container {
-        border-radius: 50%;
-        background-image: url(IMG_0160_Portrait.jpg);
-        background-size: cover;
-        width: 250px;
-        height: 250px;
-        margin-top: 3rem;
+    .home-img-hover {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 7;
+        right: 1rem;
+        width: 12rem;
+        height: 12rem;
+        background: black;
+        opacity: 50%;
+        transition: 3s;
+    }
+
+    .image-container img {
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 7rem;
+        right: 1rem;
+    }
+
+    .lets-talk-btn {
+        margin-bottom: 5rem;
     }
 
     .logo {
@@ -730,8 +752,40 @@ input {
         color: rgb(39, 165, 196);
     }
 
-    .social-links a {
-        left: -9rem;
+    .professional-skills {
+        margin: 1rem;
+    }
+
+    .programming-skills, .hackathons {
+        margin: 0rem 1rem;
+    }
+
+    .projects-container h3 {
+        padding: 0rem 7.5rem;
+    }
+
+    .projects-container h4 {
+        padding: 0rem 4.398rem;
+    }
+
+    .projects-container, .project-details, .project-description {
+        display: block;
+        justify-content: center;
+    }
+
+    /* .resume-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .skills-container {
+        display: block;
+    }
+
+    .stephen::after {
+        content: "\a";
+        white-space: pre;
     }
 
     .subscribe-btn {
@@ -740,11 +794,22 @@ input {
         right: 4rem;
     }
 
+    .subscribe-form {
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
     .text {
         margin: 5rem 0rem 0rem;
     }
 
     .text-container {
-        font-size: 15px;
-    }    
+        font-size: 12px;
+    }  
+
+    .timer-img img {
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    
 }
