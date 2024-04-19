@@ -44,7 +44,7 @@ button:hover, button.subscribe-btn {
 }
 
 /* this is for Let's connect button */
-.call-to-action {
+/* .call-to-action {
     position: relative;
     background-color: transparent;
     border: 2px solid;
@@ -56,9 +56,9 @@ button:hover, button.subscribe-btn {
     border-radius: 10px;
     z-index: 1;
     overflow: hidden;
-}
+} */
 
-.call-to-action a {
+/* .call-to-action a {
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -80,7 +80,7 @@ button:hover, button.subscribe-btn {
 
 .call-to-action a:hover::before {
     width: 100%;
-}
+} */
 
 .call-to-action-form {
     min-height: auto;
@@ -331,35 +331,6 @@ input {
     animation-delay: 1.5s;
 }
 
-.projects-container {
-    padding: 5rem 10rem;
-    display: block; /*don't forget to change display back to none*/
-}
-
-.project-description {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.project-links {
-    padding: .5rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-links a {
-    color: white;
-    text-decoration: none;
-    background-color: rgb(38, 54, 59);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.project-links a:hover {
-    color: rgb(39, 165, 196);
-}
-
 .professional-skills #innovation-management .progress-bar::before {
     width: 80%;
 }
@@ -392,8 +363,38 @@ input {
     padding: 1rem;
 }
 
+.projects-container {
+    padding: 5rem 10rem;
+    display: none; /*display is none by default*/
+}
+
+.project-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.project-links {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(38, 54, 59);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project-links a:hover {
+    color: rgb(39, 165, 196);
+}
+
 .publications {
     padding: 5rem 10rem;
+    display: none; /*change to block by JS*/
 }
 
 .publications h3 {
@@ -412,7 +413,7 @@ input {
 .resume-container {
     background-color: rgb(6, 36, 36);
     padding: 5rem 10rem;
-    display: flex;
+    display: none; /*display should be changed to flex by JavaScript*/
     flex-direction: column;
     justify-content: space-between;
 }
