@@ -1,351 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/6b477f8f0f.js" crossorigin="anonymous"></script>
-  <title>Personal Portfolio website</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b477f8f0f.js" crossorigin="anonymous"></script>
+    <title>Stephen Akin</title>
+  </head>
+  <body>
     <div class="general-container">
-        <div class="home-container">
-            <div class="header">
-                <a href="" class="logo">Stephen.</a>
+      <div class="home-container">
+        <nav class="header">
+          <a href="" class="logo">Stephen Akin.</a>
 
-                <div class="navbar">
-                    <div class="menu-desktop">
-                        <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
-                        <button class="menu-btn" onclick="shutDownMenu(); resume()">Resume</button>
-                        <button class="menu-btn" onclick="shutDownMenu(); myPublications()">Publications</button>
-                    </div>
-
-                    <div class="menu-mobile">
-                        <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
-                        <button class="menu-btn" onclick="shutDownMenu(); resume()">Resume</button>
-                        <button class="menu-btn" onclick="shutDownMenu(); myPublications()">Publications</button>
-                    </div>
-                    <button type="button" class="subscribe-btn" id="subscribe-btn">Subscribe <i class="fa-solid fa-bell"></i></button>
-                    <div class="menu-icons">
-                        <button class="bars" id="bars-menu" onclick="displayMenu()"><i class="fa-solid fa-bars"></i></button>
-                        <button class="close" id="close-menu" onclick="shutDownMenu()"><i class="fa fa-times" aria-hidden="true"></i></i></button>
-                    </div>
-                </div>
+          <div class="navbar">
+            <div class="menu-desktop">
+              <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
+              <button class="menu-btn" onclick="shutDownMenu(); resume()">Resume</button>
+              <button class="menu-btn" onclick="shutDownMenu(); myPublications()">Publications</button>
             </div>
+
+            <div class="menu-mobile">
+              <button class="menu-btn" onclick="shutDownMenu(); projects()" type="button">Projects</button>
+              <button class="menu-btn" onclick="shutDownMenu(); resume()">Resume</button>
+              <button class="menu-btn" onclick="shutDownMenu(); myPublications()">Publications</button>
+            </div>
+
+            <button type="button" class="subscribe-btn" id="subscribe-btn">Subscribe <i class="fa-solid fa-bell"></i></button>
+
+            <div class="menu-icons">
+              <button class="bars" id="bars-menu" onclick="displayMenu()"><i class="fa-solid fa-bars"></i></button>
+              <button class="close" id="close-menu" onclick="shutDownMenu()"><i class="fa fa-times" aria-hidden="true"></i></i></button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="text-image-container" id="home">
+            <div class="text-container">
+                <div class="text">
+                    <h1 class="greetings">Hello!</h1>
+                    <br>
+                    <h1 class="introduction">I'm <span class="stephen">Stephen</span> Akinrodoye</h1>
+                    <br>
+                    <span class="profession"><h3>Software Engineer</h3></span>
+                </div> 
+                <!-- <div class="call-to-action">
+                    <a href="">Let's Connect</a>
+                </div> -->
     
-            <div class="text-image-container" id="home">
-                <div class="text-container">
-                    <div class="text">
-                        <h1 class="greetings">Hello!</h1>
-                        <br>
-                        <h1 class="introduction">I'm <span class="stephen">Stephen</span> Akinrodoye</h1>
-                        <br>
-                        <span class="profession"><h3>Software Engineer</h3></span>
-                    </div> 
-                    <!-- <div class="call-to-action">
-                        <a href="">Let's Connect</a>
+                <div class="testimonials-container">
+                    <!-- if a user sends a favourable review or message,
+                    the owner may display such reviews in the block of commented code below -->
+
+                    <!-- <h4>Testimonials</h4>
+    
+                    <div class="testimonials">
+                        <h5 class="name"></h5>
+                        <p class="review"></p>
                     </div> -->
-        
-                    <div class="testimonials-container">
-                        <!-- if a user sends a favourable review or message,
-                        the owner may display such reviews in the block of commented code below -->
-
-                        <!-- <h4>Testimonials</h4>
-        
-                        <div class="testimonials">
-                            <h5 class="name"></h5>
-                            <p class="review"></p>
-                        </div> -->
-        
-                        <div class="form">
-                            <form action="" class="testimonials-form">
-                                <label for=""><h5>Send a testimonial</h5></label>
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="leave a message">
-                                <button>Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="./images/IMG_0160_Portrait.jpg" alt="" width="450px" height="450px">
-                    <span class="home-img-hover" id="home-img-hover"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-me-container" id="about-me">
-            <div class="about-me-img">
-                <img src="./images/Stephen_Portrait.jpg" alt="" width="300px" height="300px">
-            </div>
-
-            <div class="about-me-text">
-                <h3>About Me</h3>
-                <br>
-                <p>
-                    Welcome! I'm Stephen Akinrodoye, a dynamic and dedicated individual with a passion for innovation 
-                    and efficiency. Driven by a thirst for knowledge, I thrive on discovering and implementing new ideas 
-                    that make a tangible difference.
-        
-                    <br>
-                    <br>
-                    With a keen eye for details and commendable problem-solving skills, my transition into tech led me to 
-                    front-end development at Web3Bridge, where I honed my skills and crafted a solid foundation in 
-                    creating captivating, user-friendly interfaces.
-        
-                    As a good listener and learner, I understand the importance of effective communication in both group 
-                    settings and one-on-one interactions. This ability allows me to not only grasp complex ideas but 
-                    also convey them clearly and concisely.
-        
-                    <br>
-                    <br>
-                    I am committed to leveraging my talents and skills to overcome challenges and achieve objectives.
-                    Whether it's motivating a team or navigating individual tasks, I thrive in environments where 
-                    collaboration and innovation intersect.
-        
-                    Join me in pushing the boundaries of what's possible in the digital landscape. Together, let's build 
-                    experiences that inspire, engage, and leave a lasting impact.
-                </p>
-            </div>
-        </div>
-
-        <div class="projects-container" id="projects-container">
-            <h3>My Projects</h3>
-            <br>
-
-            <h4>Launch Countdown Timer</h4>
-
-            <div class="project-details">
-                <div class="project-description">
-                    <div class="countdown-description">                
-                        <p>
-                            Here is a simple countdown timer app that counts the amount of time left to launch a project in days, hours,
-                            minutes, and seconds. Whether today is the 10th day of March or the 28th day of december, I've got
-                            you covered.
-                        </p>
-        
-                        <div class="project-links">
-                            <a href="https://github.com/Tobistephenn/Countdown-Timer.git" target="_blank">View the code</a>
-                            <a href="https://tobistephenn.github.io/Countdown-Timer/" target="_blank">View the page</a>
-                        </div>
-                    </div>
     
-                    <div class="timer-img">
-                        <img src="./images/Launch Countdown timer.png" alt="" width="400px" height="200px">
+                    <div class="form">
+                        <form action="" class="testimonials-form">
+                            <label for=""><h5>Send a testimonial</h5></label>
+                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="leave a message">
+                            <button>Submit</button>
+                        </form>
                     </div>
-                    
-                    <div class="comments-input">
-                        <input class="user-name" id="user_name" placeholder="Name"></input>
-                        <input name="" id="comments-input" placeholder="Leave a comment"></input>
-                        <button type="submit" id="comments-submit-btn" onclick="submitComment()">Submit</button>
-                    </div>
-                </div>                
-
-                <div class="comment-section">
-                    <!-- displays users inputs from comments-input -->
-                    <p class="name" id="name"><!-- displays user's name --></p>
-                    <p class="comments" id="comments"><!-- displays user's comments --></p>
                 </div>
-            </div>            
+            </div>
+
+            <div class="image-container">
+                <img src="./images/IMG_0160_Portrait.jpg" alt="" width="450px" height="450px">
+                <span class="home-img-hover" id="home-img-hover"></span>
+            </div>
+        </div>
+      </div>
+
+      <div class="about-me-container" id="about-me">
+        <div class="about-me-img">
+          <img src="./images/Stephen_Portrait.jpg" alt="" width="300px" height="300px">
         </div>
 
-        <div class="call-to-action-form" id="call-to-action-form">
-            <h2 class="heading">Let's Connect</h2>
+        <div class="about-me-text">
+          <h3>About Me</h3>
+          <br>
+          <p>
+            Welcome! I'm Stephen Akinrodoye, a dynamic and dedicated individual with a passion for innovation 
+            and efficiency. Driven by a thirst for knowledge, I thrive on discovering and implementing new ideas 
+            that make a tangible difference.
 
-            <form action="a">
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="text" placeholder="Full Name" required>
-                        <span class="focus"></span>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Email Address" required>
-                        <span class="focus"></span>
-                    </div>
-                </div>
-                
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="text" placeholder="Mobile Number" required>
-                        <span class="focus"></span>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Email Subject" required>
-                        <span class="focus"></span>
-                    </div>
-                </div>
+            <br>
+            <br>
+            With a keen eye for details and commendable problem-solving skills, my transition into tech led me to 
+            front-end development at Web3Bridge, where I honed my skills and crafted a solid foundation in 
+            creating captivating, user-friendly interfaces.
 
-                <div class="textarea-field">
-                    <textarea name="" id="" cols="30" rows="8" placeholder="Your message" required></textarea>
-                    <span class="focus"></span>
-                </div>
+            As a good listener and learner, I understand the importance of effective communication in both group 
+            settings and one-on-one interactions. This ability allows me to not only grasp complex ideas but 
+            also convey them clearly and concisely.
 
-                <div class="lets-talk-btn">
-                    <button type="submit" class="btn">Submit</button>
-                </div>
-            </form>
+            <br>
+            <br>
+            I am committed to leveraging my talents and skills to overcome challenges and achieve objectives.
+            Whether it's motivating a team or navigating individual tasks, I thrive in environments where 
+            collaboration and innovation intersect.
 
-          <div class="social-links" id="social-links">
-            <a href="https://linkedin.com/in/stephen-akinrodoye" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/Stephen_Akinrod" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
-            <a href="https://web.facebook.com/fun.tobi01" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://ar.pinterest.com/stephenakinrodoye/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://www.behance.net/stephenaki3bac" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            Join me in pushing the boundaries of what's possible in the digital landscape. Together, let's build 
+            experiences that inspire, engage, and leave a lasting impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-container" id="projects-container">
+        <h3>My Projects</h3>
+        <br>
+
+        <h4>Launch Countdown Timer</h4>
+
+        <div class="project-details">
+          <div class="project-description">
+            <div class="countdown-description">                
+              <p>
+                Here is a simple countdown timer app that counts the amount of time left to launch a project in days, hours,
+                minutes, and seconds. Whether today is the 10th day of March or the 28th day of december, I've got
+                you covered.
+              </p>
+
+              <div class="project-links">
+                <a href="https://github.com/Tobistephenn/Countdown-Timer.git" target="_blank">View the code</a>
+                <a href="https://stephenakinrodoye.github.io/Countdown-Timer/" target="_blank">View the page</a>
+              </div>
+            </div>
+
+            <div class="timer-img">
+              <img src="./images/Launch Countdown timer.png" alt="" width="400px" height="200px">
+            </div>
+            
+            <div class="comments-input">
+              <input class="user-name" id="user_name" placeholder="Name"></input>
+              <input name="" id="comments-input" placeholder="Leave a comment"></input>
+              <button type="submit" id="comments-submit-btn" onclick="submitComment()">Submit</button>
+            </div>
+          </div>                
+
+          <div class="comment-section">
+            <!-- displays users inputs from comments-input -->
+            <p class="name" id="name"><!-- displays user's name --></p>
+            <p class="comments" id="comments"><!-- displays user's comments --></p>
+          </div>
+        </div>            
+      </div>
+
+      <div class="call-to-action-form" id="call-to-action-form">
+        <h2 class="heading">Let's Connect</h2>
+
+        <form action="a">
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" placeholder="Full Name" required>
+              <span class="focus"></span>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email Address" required>
+              <span class="focus"></span>
+            </div>
+          </div>
+          
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" placeholder="Mobile Number" required>
+              <span class="focus"></span>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email Subject" required>
+              <span class="focus"></span>
+            </div>
+          </div>
+
+          <div class="textarea-field">
+            <textarea name="" id="" cols="30" rows="8" placeholder="Your message" required></textarea>
+            <span class="focus"></span>
+          </div>
+
+          <div class="lets-talk-btn">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+
+        <div class="social-links" id="social-links">
+          <a href="https://linkedin.com/in/stephen-akinrodoye" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/Stephen_Akinrod" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+          <a href="https://web.facebook.com/fun.tobi01" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://ar.pinterest.com/stephenakinrodoye/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://www.behance.net/stephenaki3bac" target="_blank"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+      <div class="subscribe-form" id="subscribe-form">
+        <h2>JOIN THE BUNCH</h2>
+        <p>
+          Sign up fot my monthly update for just the right amount of love.
+          Be the first to know about my specials and promotions.
+        </p>
+
+        <input type="text" placeholder="Email Address">
+
+        <button>Sign me up</button>
+      </div>
+
+      <div class="resume-container" id="resume-container">
+        <h2>RESUME</h2>
+        <div class="skills-container">
+          <div class="programming-skills">
+            <h3>Programming Skills</h3>
+            <div class="skills" id="html">
+              <div class="skill-description">
+                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>                            
+                <p>HTML</p>
+                <div class="percentage">75%</div>
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+
+            <div class="skills" id="css">
+              <div class="skill-description">
+                <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>                            
+                <p>CSS</p>
+                <div class="percentage">70%</div>
+              </div>
+              <div class="progress-bar"></div>                        
+            </div>
+
+            <div class="skills" id="js">
+              <div class="skill-description">
+                <div class="skill-icon"><i class="fa-brands fa-js"></i></div>                            
+                <p>JavaScript</p>
+                <div class="percentage">50%</div>
+              </div>                        
+              <div class="progress-bar"></div>                        
+            </div>
+
+            <div class="skills" id="react">
+              <div class="skill-description">
+                <div class="skill-icon"><i class="fa-brands fa-react"></i></div>                            
+                <p>React</p>
+                <div class="percentage">10%</div>
+              </div>                        
+              <div class="progress-bar"></div>                        
+            </div>
+  
+            <div class="skills" id="sol">
+              <div class="skill-description">
+                <div class="skill-icon">
+                  <img src="./images/solidity-icon.png" alt="" class="solidity" width="20px" height="20px">
+                </div>                            
+                <p>Solidity</p>
+                <div class="percentage">60%</div>
+              </div>                        
+              <div class="progress-bar"></div>                        
+            </div>
+
+            <div class="skills" id="py">
+              <div class="skill-description">
+                <div class="skill-icon">
+                  <img src="./images/7-2-python-logo-free-download-png.png" alt="" width="25px" height="25px">
+                </div>                            
+                <p>Python</p>
+                <div class="percentage">50%</div>
+              </div>                        
+              <div class="progress-bar"></div>                        
+            </div>
+          </div>
+
+          <div class="professional-skills">
+            <h3>Professional skills</h3>
+            <div class="skills" id="innovation-management">
+              <div class="skill-description">
+                <p>Innovation management</p>
+                <div class="percentage">80%</div>
+              </div>                        
+              <div class="progress-bar"></div>                        
+            </div>
+
+            <div class="skills" id="web-design">
+              <div class="skill-description">
+                <p>Web design</p>
+                <div class="percentage">25%</div>
+              </div>
+              <div class="progress-bar"></div>                        
+            </div>
+          </div>
+
+          <div class="hackathons">
+            <h3>Hackathons</h3>
+            <h4 class="hackathon-name">BUIDLCON2.0 <span>4th - 6th April, 2024</span></h4>
+            <img src="./images/The Team.png" alt="" class="team" width="290px" height="150">
+            <h5 class="team-name">LedaStorc</h5>
+            <p class="position">1st runner up</p>
+          </div>
+        </div>            
+      </div>
+
+      <div class="publications">
+        <h3>Publications</h3>
+        <hr>
+        <div class="write-up">
+          <div class="write-up-title">
+            <a href="https://medium.com/@stephenakinrodoye2/blockchain-technology-an-overview-for-beginners-47f293ddc72d" target="_blank">
+              <h4>Blockchain Technology: An Overview for Beginners</h4>
+            </a>
+          </div>
+          <p class="write-up-preview">
+            Blockchain technology serves as a decentralized digital ledger, composed of 
+            interconnected blocks containing timestamped records or…
+          </p>
+          <div class="write-up-footer">
+            <p>Published on Sep 28, 2023 · 2 min read<p>
+            <i class="fa-regular fa-thumbs-up"></i><span class="like-count">0</span>
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
           </div>
         </div>
 
-        <div class="subscribe-form" id="subscribe-form">
-            <h2>JOIN THE BUNCH</h2>
-            <p>
-                Sign up fot my monthly update for just the right amount of love.
-                Be the first to know about my specials and promotions.
-            </p>
-
-            <input type="text" placeholder="Email Address">
-
-            <button>Sign me up</button>
+        <div class="write-up">
+          <div class="write-up-title">
+            <a href="https://medium.com/@stephenakinrodoye2/cryptography-in-blockchain-6422ae508495"target="_blank">
+              <h4>Cryptography in Blockchain</h4>
+            </a>
+          </div>
+          <p class="write-up-preview">
+            Cryptography is one of the most essential features that helps in achieving the 
+            various security features provided on the blockchain…
+          </p>
+          <div class="write-up-footer">
+            <p>Published on Sept 22, 2023 · 4 min read<p>
+            <i class="fa-regular fa-thumbs-up"></i><span class="like-count">0</span>
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
         </div>
+      </div>
 
-        <div class="resume-container" id="resume-container">
-            <h2>RESUME</h2>
-            <div class="skills-container">
-                <div class="programming-skills">
-                    <h3>Programming Skills</h3>
-                    <div class="skills" id="html">
-                        <div class="skill-description">
-                            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>                            
-                            <p>HTML</p>
-                            <div class="percentage">75%</div>
-                        </div>
-                        <div class="progress-bar"></div>
-                    </div>
-    
-                    <div class="skills" id="css">
-                        <div class="skill-description">
-                            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>                            
-                            <p>CSS</p>
-                            <div class="percentage">70%</div>
-                        </div>
-                        <div class="progress-bar"></div>                        
-                    </div>
-    
-                    <div class="skills" id="js">
-                        <div class="skill-description">
-                            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>                            
-                            <p>JavaScript</p>
-                            <div class="percentage">50%</div>
-                        </div>                        
-                        <div class="progress-bar"></div>                        
-                    </div>
-
-                    <div class="skills" id="react">
-                        <div class="skill-description">
-                            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>                            
-                            <p>React</p>
-                            <div class="percentage">10%</div>
-                        </div>                        
-                        <div class="progress-bar"></div>                        
-                    </div>
-        
-                    <div class="skills" id="sol">
-                        <div class="skill-description">
-                            <div class="skill-icon">
-                                <img src="./images/solidity-icon.png" alt="" class="solidity" width="20px" height="20px">
-                            </div>                            
-                            <p>Solidity</p>
-                            <div class="percentage">60%</div>
-                        </div>                        
-                        <div class="progress-bar"></div>                        
-                    </div>
-        
-                    <div class="skills" id="py">
-                        <div class="skill-description">
-                            <div class="skill-icon">
-                                <img src="./images/7-2-python-logo-free-download-png.png" alt="" width="25px" height="25px">
-                            </div>                            
-                            <p>Python</p>
-                            <div class="percentage">50%</div>
-                        </div>                        
-                        <div class="progress-bar"></div>                        
-                    </div>
-                </div>
-
-                <div class="professional-skills">
-                    <h3>Professional skills</h3>
-                    <div class="skills" id="innovation-management">
-                        <div class="skill-description">
-                            <p>Innovation management</p>
-                            <div class="percentage">80%</div>
-                        </div>                        
-                        <div class="progress-bar"></div>                        
-                    </div>
-    
-                    <div class="skills" id="web-design">
-                        <div class="skill-description">
-                            <p>Web design</p>
-                            <div class="percentage">25%</div>
-                        </div>
-                        <div class="progress-bar"></div>                        
-                    </div>
-                </div>
-
-                <div class="hackathons">
-                    <h3>Hackathons</h3>
-                    <h4 class="hackathon-name">BUIDLCON2.0 <span>4th - 6th April, 2024</span></h4>
-                    <img src="./images/The Team.png" alt="" class="team" width="290px" height="150">
-                    <h5 class="team-name">LedaStorc</h5>
-                    <p class="position">1st runner up</p>
-                </div>
-            </div>            
-        </div>
-
-        <div class="publications">
-            <h3>Publications</h3>
-            <hr>
-            <div class="write-up">
-                <div class="write-up-title">
-                    <a href="https://medium.com/@stephenakinrodoye2/blockchain-technology-an-overview-for-beginners-47f293ddc72d" target="_blank">
-                        <h4>Blockchain Technology: An Overview for Beginners</h4>
-                    </a>
-                </div>
-                <p class="write-up-preview">
-                    Blockchain technology serves as a decentralized digital ledger, composed of 
-                    interconnected blocks containing timestamped records or…
-                </p>
-                <div class="write-up-footer">
-                    <p>Published on Sep 28, 2023 · 2 min read<p>
-                    <i class="fa-regular fa-thumbs-up"></i><span class="like-count">0</span>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
-            </div>
-
-            <div class="write-up">
-                <div class="write-up-title">
-                    <a href="https://medium.com/@stephenakinrodoye2/cryptography-in-blockchain-6422ae508495"target="_blank">
-                        <h4>Cryptography in Blockchain</h4>
-                    </a>
-                </div>
-                <p class="write-up-preview">
-                    Cryptography is one of the most essential features that helps in achieving the 
-                    various security features provided on the blockchain…
-                </p>
-                <div class="write-up-footer">
-                    <p>Published on Sept 22, 2023 · 4 min read<p>
-                    <i class="fa-regular fa-thumbs-up"></i><span class="like-count">0</span>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <i class="fa-regular fa-copyright"></i>
-            <p>Stephen Akinrodoye 2024</p>
-        </div>
+      <div class="footer">
+        <i class="fa-regular fa-copyright"></i>
+        <p>Stephen Akinrodoye 2024</p>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
