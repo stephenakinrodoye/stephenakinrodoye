@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Stephen</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Stephen Akinrodoye</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" >Projects</a></li>
+          <li><a href="resume.html" >Resume</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="web-security.html">Web Security</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Contact Me</h2>
+        <p>Have a question or project in mind? Reach out using the form below</p>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+
+          <label for="subject">Subject:</label>
+          <select id="subject" required>
+            <option value="">Select a subject</option>
+            <option value="hiring">Hiring</option>
+            <option value="project">Project Collaboration</option>
+            <option value="question">General Inquiry</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Stephen Akinrodoye | <a href="mailto:stephenakinrodoye2@gmail.com" class="external-links">Contact Me</a></p>
+    </footer>
+  </body>
+</html>
